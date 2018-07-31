@@ -1,6 +1,5 @@
 // Add BandInput component
 import React, { Component } from 'react'
-import {connect} from 'react-redux'
 
 export default class BandInput extends Component {
   constructor(){
@@ -35,7 +34,3 @@ export default class BandInput extends Component {
     )
   }
 }
-
-const mapDispatchToProps = dispatch => ({
-  addBand: formData => dispatch({type: 'ADD_BAND', payload: formData})
-})
