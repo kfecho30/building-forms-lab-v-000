@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 
 class BandsContainer extends Component {
   renderBands = () => this.props.bands.map((band, id) => `<li>${band.name}</li>`)
