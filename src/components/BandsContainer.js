@@ -7,7 +7,9 @@ class BandsContainer extends Component {
   render() {
     return(
       <div>
-        BandsContainer
+        <ul>
+          {this.renderBands}
+        </ul>
       </div>
     )
   }
