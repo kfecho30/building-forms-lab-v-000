@@ -19,7 +19,7 @@ class BandInput extends Component {
     return(
       <div>
         <form>
-          <input type="text" onKeyDown={this.handleChange}/>
+          <input type="text" onKeyDown={this.handleChange} value={this.state.text}/>
         </form>
       </div>
     )
