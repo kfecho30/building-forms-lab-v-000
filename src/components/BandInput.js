@@ -18,7 +18,7 @@ export default class BandInput extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.store.dispatch({
-      type: 'ADD_BAND'
+      type: 'ADD_BAND',
       band: this.state.text
     })
   }
