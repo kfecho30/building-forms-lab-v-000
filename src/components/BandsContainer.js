@@ -13,7 +13,7 @@ class BandsContainer extends Component {
 
 const mapStateToProps = state => {
   return {
-    todos: state.todos
+    bands: state.bands
   }
 }
 
