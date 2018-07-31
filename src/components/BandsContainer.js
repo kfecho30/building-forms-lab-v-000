@@ -11,4 +11,10 @@ class BandsContainer extends Component {
   }
 }
 
-export default BandsContainer
+const mapStateToProps = state => {
+  return {
+    todos: state.todos
+  }
+}
+
+export default connect(mapStateToProps)(BandsContainer);
