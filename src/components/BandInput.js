@@ -4,7 +4,6 @@ import React, { Component } from 'react'
 export default class BandInput extends Component {
   state={text:''}
 
-
   handleChange = e => {
     this.setState({
       text: e.target.value
@@ -13,10 +12,7 @@ export default class BandInput extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.store.dispatch({
-      type: 'ADD_BAND',
-      band: this.state.text
-    })
+    this.props.addBand(this.state.text)
     this.setState({text: ''})
   }
 
