@@ -11,11 +11,14 @@ export default class BandInput extends Component {
   }
 
   handleChange = e => {
-    e.preventDefault();
-    this.props.addBand(this.state)
     this.setState({
       text: e.target.value
     })
+  }
+
+  handleSubmit = e => {
+    e.preventDefault();
+    this.props.addBand(this.state)
   }
 
   render() {
