@@ -21,7 +21,7 @@ export default class BandInput extends Component {
   render() {
     return(
       <div>
-        <form onSubmit={this.props.addBand}>
+        <form onSubmit={this.handleSubmit>
           <input type="text" onKeyDown={this.handleChange} value={this.state.text}/>
           <input type="submit"/>
         </form>
