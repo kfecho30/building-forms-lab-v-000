@@ -9,8 +9,10 @@ class BandInput extends Component {
     }
   }
 
-  handleChange = () => {
-    
+  handleChange = e => {
+    this.setState({
+      text: e.target.valuel
+    })
   }
 
   render() {
