@@ -20,7 +20,7 @@ export default class BandInput extends Component {
     return(
       <div>
         <form onSubmit={this.handleSubmit}>
-          <input type="text" onKeyDown={this.handleChange} value={this.state.text}/>
+          <input type="text" onChange={this.handleChange} value={this.state.text}/>
           <input type="submit"/>
         </form>
       </div>
