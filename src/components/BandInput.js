@@ -10,6 +10,8 @@ class BandInput extends Component {
   }
 
   handleChange = e => {
+    e.preventDefault();
+    this.props.addBand(this.band)
     this.setState({
       text: e.target.value
     })
