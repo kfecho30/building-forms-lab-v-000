@@ -2,12 +2,8 @@
 import React, { Component } from 'react'
 
 export default class BandInput extends Component {
-  constructor(props){
-    super(props);
-    this.state={
-      text:''
-    }
-  }
+  state={text:''}
+
 
   handleChange = e => {
     this.setState({
