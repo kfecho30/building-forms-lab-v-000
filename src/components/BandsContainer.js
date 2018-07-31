@@ -7,10 +7,8 @@ export default class BandsContainer extends Component {
   render() {
     return(
       <div>
-        <ul>
-          <BandInput addBand={this.props.addBand}/>
-          <Bands bands={this.props.bands}/>
-        </ul>
+        <BandInput addBand={this.props.addBand}/>
+        <Bands bands={this.props.bands}/>
       </div>
     )
   }
