@@ -9,6 +9,10 @@ class BandInput extends Component {
     }
   }
 
+  handleChange = () => {
+    
+  }
+
   render() {
     return(
       <div>
