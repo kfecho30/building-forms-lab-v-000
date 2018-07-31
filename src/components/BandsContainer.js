@@ -3,7 +3,7 @@ import BandInput from './BandInput'
 import Bands from './Bands'
 import {connect} from 'react-redux';
 
-export default class BandsContainer extends Component {
+class BandsContainer extends Component {
   render() {
     return(
       <div>
@@ -13,3 +13,7 @@ export default class BandsContainer extends Component {
     )
   }
 }
+
+const mapStateToProps = ({bands}) => ({bands})
+
+export default connect(mapStateToProps, mapDispatchToProps)(BandsContainer)
