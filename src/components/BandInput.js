@@ -11,7 +11,7 @@ class BandInput extends Component {
 
   handleChange = e => {
     e.preventDefault();
-    this.props.addBand(this.band)
+    this.props.addBand(this.state)
     this.setState({
       text: e.target.value
     })
