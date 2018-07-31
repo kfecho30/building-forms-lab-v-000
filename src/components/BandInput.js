@@ -21,6 +21,7 @@ export default class BandInput extends Component {
       type: 'ADD_BAND',
       band: this.state.text
     })
+    this.setState({text: ''})
   }
 
   render() {
