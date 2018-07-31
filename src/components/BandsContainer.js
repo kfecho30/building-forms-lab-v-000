@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class BandsContainer extends Component {
+export default class BandsContainer extends Component {
   renderBands = () => this.props.bands.map((band, id) => `<li>${band.name}</li>`)
 
   render() {
@@ -13,11 +13,3 @@ class BandsContainer extends Component {
     )
   }
 }
-
-const mapStateToProps = state => {
-  return {
-    bands: state.bands
-  }
-}
-
-export default connect(mapStateToProps)(BandsContainer);
